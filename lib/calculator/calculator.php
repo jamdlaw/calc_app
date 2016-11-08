@@ -6,6 +6,7 @@ require('operation/addition.php');
 require('operation/subtraction.php');
 require('operation/divison.php');
 require('operation/multiplication.php');
+require('operation/fractorial.php')
 class Calculator
 {
     protected $operands = array();
