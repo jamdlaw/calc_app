@@ -6,7 +6,8 @@ require('operation/addition.php');
 require('operation/subtraction.php');
 require('operation/divison.php');
 require('operation/multiplication.php');
-require('operation/fractorial.php')
+require('operation/factorial.php');
+
 class Calculator
 {
     protected $operands = array();
@@ -14,7 +15,8 @@ class Calculator
                   'addition' => '+'
                  ,'subtraction'=> '-'   
                  ,'multiplication'=>'*'
-                 ,'divison'=>'/' 
+                 ,'divison'=>'/'
+                 ,'factorial'=>'!'
                 );
 
     public function setOperands(array $operands = array())
