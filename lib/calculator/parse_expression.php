@@ -15,7 +15,6 @@ public function solve($exp = array())
 	$result = 'Nothing to calc';
 	if($this->validExpression($exp)) 
 		{
-		//echo 'inside the if statment';
 		$this->expression = $exp;	
 		foreach($this->expression as $current)
 			{
@@ -37,6 +36,7 @@ public function solve($exp = array())
 	return $result;	
 	}
 
+ //checks if espession is a valid RPN
  public function validExpression($exp)
  	{
  	$result = false;
