@@ -11,9 +11,10 @@ public function __construct(){
 }
 
 public function solve($exp = array()){	
-		if(!$this->validExpression($exp)){
-			return 'Nothing to calculate';
-		}
+	if(!$this->validExpression($exp)){
+		return 'Nothing to calculate';
+	}
+	
 	if($this->validExpression($exp)) 
 		{
 		$this->expression = $exp;
