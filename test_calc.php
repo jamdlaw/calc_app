@@ -1,6 +1,11 @@
 <?php
 require('lib/calculator/parse_expression.php');
-print_r($argv, $equation);
+//parse_str(implode('&', array_slice($argv, 1)), $_GET);
+//print_r($_GET);
+
+
+$equation = array_slice($argv, 1);
+print_r($equation);
 
 //parse_str(implode('&', array_slice($argv, 1)), $_GET);
 //print_r($_GET);
