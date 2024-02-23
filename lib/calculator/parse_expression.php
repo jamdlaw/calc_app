@@ -14,9 +14,7 @@ public function solve($exp = array()){
 	if(!$this->validExpression($exp)){
 		return 'Nothing to calculate';
 	}
-
 	$this->expression = $exp;
-
 	foreach($this->expression as $current){
 		print_r('evaulating this value:' . $current);
 		echo "\n";
