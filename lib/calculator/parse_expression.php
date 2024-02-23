@@ -15,9 +15,13 @@ public function solve($exp = array())
 	$result = 'Nothing to calc';
 	if($this->validExpression($exp)) 
 		{
-		$this->expression = $exp;	
+		$this->expression = $exp;
+		print_r($this->expression);
+		echo "\n";	
 		foreach($this->expression as $current)
 			{
+			print_r('current is eqaul to:' . $current);
+			echo "\n";	
 			if ($this->calculator->isOperator($current))
 				{	
 				$val2 = array_pop($stack);
