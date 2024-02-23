@@ -1,17 +1,15 @@
 <?php
 require('lib/calculator/parse_expression.php');
-//parse_str(implode('&', array_slice($argv, 1)), $_GET);
-//print_r($_GET);
-
+$calculator = new parse_expression;
 
 $equation = array_slice($argv, 1);
 print_r($equation);
+$result = $calculator->solve($equation);
+var_dump($result);
 
-//parse_str(implode('&', array_slice($argv, 1)), $_GET);
-//print_r($_GET);
 //$expression = array ('2' , '3' , '11' , '+' ,'5' ,'-' , '*' ); (should == 18)
 //$expression = array('3', '11', '+' , '5', '-'); (should == 9)
-$calculator = new parse_expression;
+
 // array('3', '11', '+' , '5', '-'); (should == 9)
 $result = $calculator->solve(array('3', '11', '+' , '5', '-'));
 var_dump($result);
