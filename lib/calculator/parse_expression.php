@@ -18,7 +18,10 @@ public function solve($exp = array()){
 	foreach($this->expression as $current){
 		print_r('evaulating this value:' . $current);
 		echo "\n";
+		//if current value is a number add it to the stack
 		if(!$this->calculator->isOperator($current)){
+			print_r('it is a number so add it to the stack');
+			echo "\n";
 			$stack[] = $current;	
 		}	
 		else{	
@@ -28,6 +31,11 @@ public function solve($exp = array()){
 			$this->calculator->setOperation($current);
 			$result = $this->calculator->process(); 	
 			array_push($stack, $result);
+			print_r('stack is now:');
+			echo "\n";
+			print_r($stack);
+			echo "\n";
+
 		}
 			
 	}
