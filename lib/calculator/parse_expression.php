@@ -10,9 +10,10 @@ public function __construct(){
 	$this->calculator = new Calculator;
 }
 
-public function solve($exp = array())
-	{	
-	$result = 'Nothing to calc';
+public function solve($exp = array()){	
+		if(!$this->validExpression($exp)){
+			return 'Nothing to calculate';
+		}
 	if($this->validExpression($exp)) 
 		{
 		$this->expression = $exp;
@@ -20,21 +21,20 @@ public function solve($exp = array())
 		echo "\n";	
 		foreach($this->expression as $current)
 			{
-			print_r('current is eqaul to:' . $current);
-			echo "\n";	
-			if ($this->calculator->isOperator($current))
-				{	
+			print_r('evaulating this value:' . $current);
+			echo "\n";
+			if(!$this->calculator->isOperator($current)){
+				$stack[] = $current;	
+			}	
+			else{	
 				$val2 = array_pop($stack);
 				$val1 = array_pop($stack);
 				$this->calculator->setOperands(array($val1,$val2));
 				$this->calculator->setOperation($current);
 				$result = $this->calculator->process(); 	
 				array_push($stack, $result);
-				}
-			else 
-				{
-				$stack[] = $current;
-				}	
+			}
+				
 			}
 		}
 	return $result;	
