@@ -8,8 +8,7 @@ class multiplication implements OperationInterface
         //one value in the array
         $result = array_shift($operands);
         foreach ($operands as $operand) 
-        	{
-        	//$result = $result/$operand;
+            {
         	$result *= $operand;
         	}
     return $result;
