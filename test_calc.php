@@ -3,7 +3,7 @@ require('lib/calculator/parse_expression.php');
 $calculator = new parse_expression;
 
 $equation = array_slice($argv, 1);
-print_r($equation);
+
 $result = $calculator->solve($equation);
 var_dump($result);
 
