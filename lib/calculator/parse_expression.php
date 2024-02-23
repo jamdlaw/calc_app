@@ -14,12 +14,11 @@ public function solve($exp = array()){
 	if(!$this->validExpression($exp)){
 		return 'Nothing to calculate';
 	}
-	
+
 	if($this->validExpression($exp)) 
 		{
 		$this->expression = $exp;
-		print_r($this->expression);
-		echo "\n";	
+		
 		foreach($this->expression as $current)
 			{
 			print_r('evaulating this value:' . $current);
