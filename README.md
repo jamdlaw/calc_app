@@ -1,18 +1,23 @@
-# RPN calc_app
-a php utility to solve reverse polish notation equations.
+# RPN Calc_app
 
-## below are sample of how rpn is calculated
-3 4 +: Adds 3 and 4 together
-3 4 − 5 +: Subtracts 4 from 3, then adds 5 to the result
- 
-### more examples: 
- a × (b + c) is written a b c + ×
-so modern formula looks like this
-3 * (2 + 2) = 12
-and RNP looks like this
-3 2 2 + * = 12
+RPN Calc_app is a PHP utility designed to solve equations using Reverse Polish Notation (RPN). RPN, also known as postfix notation, is a mathematical notation wherein every operator follows all of its operands. It does not need any parentheses as long as each operator has a fixed number of operands. This utility offers an efficient way to evaluate expressions in a format different from the conventional algebraic notation.
 
-### usage
-php ./test_calc.php 3 2 2 + '*'
-please make sure to wrap multi symbol in quotes. 
-it becomes a "all files in this folder" oporator insteed of multiplication
+## Introduction to RPN
+
+In Reverse Polish Notation, the operators follow their operands. For example:
+
+- `3 4 +` adds 3 and 4 together.
+- `3 4 - 5 +` subtracts 4 from 3, then adds 5 to the result.
+
+### More Examples
+
+- An algebraic expression like `a × (b + c)` is written as `a b c + ×` in RPN.
+- Thus, a modern formula like `3 * (2 + 2) = 12` in RPN looks like `3 2 2 + * = 12`.
+
+## Installation
+
+Clone this repository to your local machine to get started with RPN Calc_app. Ensure you have PHP installed on your system.
+
+```bash
+git clone <repository-url>
+cd rpn-calc_app
