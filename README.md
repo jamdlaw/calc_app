@@ -19,5 +19,5 @@ In Reverse Polish Notation, the operators follow their operands. For example:
 Clone this repository to your local machine to get started with RPN Calc_app. Ensure you have PHP installed on your system.
 
 ```bash
-git clone <repository-url>
-cd rpn-calc_app
+git clone https://github.com/jamdlaw/calc_app.git
+cd calc_app
