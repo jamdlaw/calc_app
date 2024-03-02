@@ -21,3 +21,16 @@ Clone this repository to your local machine to get started with RPN Calc_app. En
 ```bash
 git clone https://github.com/jamdlaw/calc_app.git
 cd calc_app
+
+## Requirements
+
+- PHP 7.4 or higher.
+
+Ensure PHP is installed and correctly set up on your system to use the RPN Calc_app.
+
+## Usage
+
+To calculate an equation using RPN Calc_app, run the command in your terminal as follows:
+
+```bash
+php ./test_calc.php "3 2 2 + '*'"
