@@ -35,3 +35,4 @@ To calculate an equation using RPN Calc_app, run the command in your terminal as
 
 ```bash
 php ./test_calc.php "3 2 2 + '*'"
+```
