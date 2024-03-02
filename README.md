@@ -21,6 +21,7 @@ Clone this repository to your local machine to get started with RPN Calc_app. En
 ```bash
 git clone https://github.com/jamdlaw/calc_app.git
 cd calc_app
+```
 
 ## Requirements
 
